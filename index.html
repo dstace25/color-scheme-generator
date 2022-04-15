@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>color-scheme-generator</title>
+        <meta name="description" content="generates a colour scheme from the given colour">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/index.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="form-box">
+                <form id="input-form">
+                    <input id="color" type="color" name="color">
+                        <div class="custom-select" style="width:200px;">
+                            <select name="mode" id="selected-mode">
+                                <option value="monochrome">Monochrome</option>
+                                <option value="monochrome-dark">Monochrome-dark</option>
+                                <option value="monochrome-light">Monochrome-light</option>
+                                <option value="analogic">Analogic</option>
+                                <option value="complement">Complement</option>
+                                <option value="analogic-complement">Analogic-complement</option>
+                                <option value="triad">Triad</option>
+                            </select>
+                        </div>
+                    <input type="submit" value="Get color sheme" class="submit-btn">
+                </form>
+            </div>
+            <div id="color-scheme-box">
+                <div id="color-0" class="box default-color-one"></div>
+                <div id="color-1" class="box default-color-two"></div>
+                <div id="color-2" class="box default-color-three"></div>
+                <div id="color-3" class="box default-color-four"></div>
+                <div id="color-4" class="box default-color-five"></div>
+            </div>
+            <div id="color-scheme-hex-box">
+                <div id="hex-0" class="box1">#000000</div>
+                <div id="hex-1" class="box1">#1A1919</div>
+                <div id="hex-2" class="box1">#343232</div>
+                <div id="hex-3" class="box1">#4F4A4A</div>
+                <div id="hex-4" class="box1">#6A6262</div>
+            </div>
+        </div>
+        <script src="/index.js"></script>
+    </body>
+</html>
